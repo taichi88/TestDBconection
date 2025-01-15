@@ -15,13 +15,13 @@ namespace TestDBconection.Data
         public DbSet<BooksModel> BooksModelTable { get; set; }
 
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BooksModel>().HasData(
-                new BooksModel { Id = 1, date = DateTime.Now, Description = "sdad", Name = "sdawqe" }
+                new BooksModel { Id = 1, Name = "First", Description = "Good Book", date = DateTime.Now }
 
                 );
-        }*/
+        }
 
     }
 }
